@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="my_first_website.Site1" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>TechWeb Solutions</title>
+    <style>
+        body { font-family: Arial; margin: 0; padding: 0; }
+        .header { background: #333; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; }
+        .header h1 { margin: 0; }
+        .header img { height: 50px; }
+        .nav { background: #444; padding: 10px; text-align: center; }
+        .nav a { color: white; margin: 0 15px; text-decoration: none; }
+        .nav a:hover { text-decoration: underline; }
+        .content { padding: 20px; min-height: 400px; }
+        .footer { background: #222; color: #ccc; text-align: center; padding: 15px; }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header">
+            <h1>TechWeb Solutions</h1>
+            
+        </div>
+        <div class="nav">
+            <a href="Home.aspx">Home</a>
+            <a href="Services.aspx">Services</a>
+            <a href="Contact.aspx">Contact</a>
+        </div>
+        <div class="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+        </div>
+        <div class="footer">
+            &copy; 2025 TechWeb Solutions | contact@techweb.com | +123-456-7890
+        </div>
+    </form>
+</body>
+</html>
